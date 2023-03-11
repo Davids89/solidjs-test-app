@@ -1,34 +1,25 @@
-## Usage
+## Solidjs test app
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+This app has been created to experiment with Solid.js. It is created with a Docker container to ease the setup in any device.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+The project has been developed using Typescript and Vite as builder.
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+## How to Install and Run the project
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+First of all we need to create an imagen from the `Dockerfile`. A `Makefile` has been written to facilitate the process.
 
-## Available Scripts
+### Create the App image
 
-In the project directory, you can run:
+We only has to run the next command: `make build`.
 
-### `npm dev` or `npm start`
+### Run the project
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+With `make start` we launch the Vite start command.
 
-The page will reload if you make edits.<br>
+### Stop the container
 
-### `npm run build`
+Whenever you want to stop the process you only has to run: `make stop`
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+## How to Use the Project
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+To show the site, go to you browser and navigate to `localhost:3000`
